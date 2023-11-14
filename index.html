@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabita</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                
+                <h1>KABITA</h1>
+            </div>
+            <ul>
+                <li><a href="#container">Beranda</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="swiper-container" id="container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="https://gcdnb.pbrd.co/images/2H9U9TtiT2cj.png?o=1" alt="Gambar 1">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://gcdnb.pbrd.co/images/SgT2LVg23ux2.png?o=1" alt="Gambar 2">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://gcdnb.pbrd.co/images/l4WovXjRtU9Q.png?o=1" alt="Gambar 3">
+            </div>
+            
+            <!-- Tambahkan slide lainnya sesuai kebutuhan -->
+        </div>
+        <!-- Tambahkan tombol navigasi jika diperlukan -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Tambahkan pagination jika diperlukan -->
+        <div class="swiper-pagination"></div>
+    </section>
+    <section id="beranda" class="content">
+    <h2 class="judul-selamat-datang">Selamat Datang di Kabita</h2>
+    <p>Tiba di oasis cita rasa! Sambutlah Kabita, kelezatan unik yang menyajikan kegurihan renyah berisi kol, mie, daun bawang, telur, balado, dan aida, semuanya dibalut dalam kulit lumpia. Setiap gigitan menebarkan harmoni cita rasa pedas, gurih, dan manis yang tak tertandingi.</p>
+    
+</section>
+
+    
+    <section class="produk" id="produk"> 
+        <h2>Produk Kami</h2>
+        <div class="produk-container">
+            <div class="produk-item">
+                <img class="zoom-on-hover" src="https://i.postimg.cc/ZRdPkWZq/20231104-214243.jpg" alt="Donat 1">
+                <h3>KABITA</h3>
+                <p>Kabita adalah Jajanan yang renyah berisi kol, mie, daun bawang, telur, balado, dan aida yang dilapisi oleh kulit lumpia. Kombinasi pedas, gurih, dan manis dalam setiap gigitan.</p>
+                <p2>Rp. 6.000</p2>
+            </div>
+            
+            
+    </section>
+</div>
+
+
+    <section id="kontak" class="content">
+        <h2 class="judul-hubungi-kami">Hubungi Kami</h2>
+        <p>Jika Anda memiliki pertanyaan atau pesanan, silakan hubungi kami di:</p>
+        <address>
+            Telepon: <a href="tel:+6283190754018">0831-9075-4018</a>
+        </address>
+        
+            <div class="social-icons">
+                <a href="https://wa.me/6283190754018"><img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="Social Media 2"></a>
+                <a href="https://www.instagram.com/kabita_uin/"><img src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="Social Media 3"></a><br>
+                <!-- Tambahkan ikon sosial media lainnya di sini -->
+        <p2>Alamat kami:</p2><br>   
+        <p3>Jl. Endro Suratmin, Bandar Lampung, Lampung (Depan UIN Raden Intan)</p3><br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d248.26619143696342!2d105.30470710012375!3d-5.377414933562351!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1699691121544!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+               
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            },
+            
+        });
+    </script>
+
+    <script>
+        // Menyimpan referensi ke tombol "Muat Lainnya"
+        var loadMoreButton = document.getElementById('load-more-button');
+    
+        // Menyimpan referensi ke semua item produk
+        var produkItems = document.querySelectorAll('.produk-item');
+    
+        // Menghitung jumlah item produk yang ditampilkan awal
+        var itemsShown = 8;
+    
+        // Menambahkan event listener ke tombol "Muat Lainnya"
+        loadMoreButton.addEventListener('click', function () {
+            // Menampilkan item produk tambahan
+            for (var i = itemsShown; i < itemsShown + 4; i++) {
+                if (produkItems[i]) {
+                    produkItems[i].style.display = 'block';
+                }
+            }
+            itemsShown += 4;
+    
+            // Menyembunyikan tombol "Muat Lainnya" jika semua item produk sudah ditampilkan
+            if (itemsShown >= produkItems.length) {
+                loadMoreButton.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
+
