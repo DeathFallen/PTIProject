@@ -160,6 +160,26 @@ content p {
     text-align: center; /* Mengatur teks "Selamat Datang di Toko Donat" dan paragraf berikutnya menjadi rata tengah */
 }
 
+#sejarah {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #9c1e08; /* Sesuaikan dengan warna yang diinginkan */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #ffffff; /* Sesuaikan dengan warna teks yang diinginkan */
+}
+
+#sejarah h2 {
+    font-size: 24px;
+    margin: 0 0 20px;
+}
+
+#sejarah p {
+    font-size: 16px;
+    text-align: center;
+}
+
 #kontak h2,
 #kontak p,
 #kontak address,
