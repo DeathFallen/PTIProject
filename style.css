@@ -1,0 +1,353 @@
+/* style.css */
+body {
+    font-family: 'Poppins', sans-serif; /* Mengganti font family */
+    margin: 0;
+    padding: 0;
+    background-color: #FFD700; /* Warna latar belakang cerah (kuning emas) */
+    color: #ffffff; /* Warna teks lebih gelap */
+}
+
+header {
+    max-width: 20000px;
+    background-color: #9c1e08; /* Warna oranye yang lebih cerah */
+    color: #FFF; /* Warna teks putih */
+    padding: 20px;
+    margin: 0 auto;
+    z-index: 1000; /* Memastikan header tetap di atas konten lain */z-index: 1000; /* Memastikan header tetap di atas konten lain */
+    position: fixed;
+    width: 100%
+    
+}
+
+.logo h1 {
+    font-family: 'Agbalumo', cursive; /* Ganti 'Pacifico' dengan nama font funky lainnya */
+    /* Jika font tersebut tidak tersedia, Anda bisa menambahkan font fallback */
+    /* font-family: 'Pacifico', cursive, 'Bangers', sans-serif; */
+}
+
+
+header .logo {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo img {
+    max-width: 80px;
+    height: auto;
+}
+
+nav .logo h1 {
+    font-size: 30px;
+    margin: 0;
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Tambahkan CSS berikut ke dalam file style.css */
+.swiper-container {
+    max-width: 1240px; /* Maksimum lebar konten Swiper */
+    margin: 0 auto;
+    background-color: #9c1e08; /* Warna oranye yang lebih cerah */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Mengatasi gambar yang terlalu lebar */
+    height: 500px; /* Sesuaikan tinggi swiper-container sesuai kebutuhan Anda */
+    
+}
+
+.swiper-wrapper {
+    display: flex; /* Gunakan display flex untuk membuat slide berjalan secara horizontal */
+}
+
+.swiper-slide {
+    width: 100%; /* Lebar masing-masing slide adalah 100% dari lebar kontainer */
+    height: 100%; /* Atur tinggi slide sesuai kebutuhan Anda */
+    object-fit: cover;
+    margin: 0 auto; /* Pusatkan peta horizontal di dalam konten */
+    background-size: cover;
+    background-position: center;
+    object-fit: contain; /* Gambar tetap mempertahankan aspek rasio tanpa memotong */
+}
+
+
+
+.swiper-button-next, .swiper-button-prev {
+    top: 50%; /* Pusatkan tombol navigasi secara vertikal */
+    transform: translateY(-50%); /* Geser tombol navigasi ke atas setengah dari tinggi tombol */
+}
+
+.swiper-button-next {
+    right: 10px; /* Tempatkan tombol navigasi kanan */
+}
+
+.swiper-button-prev {
+    left: 10px; /* Tempatkan tombol navigasi kiri */
+}
+
+.swiper-pagination {
+    overflow: hidden; /* Mengatasi gambar yang terlalu lebar */
+    bottom: 0px; /* Tempatkan pagination di bawah slider */
+    left: 50%; /* Pusatkan pagination secara horizontal */
+    transform: translateX(-50%); /* Geser pagination ke kiri setengah dari lebar pagination */
+}
+
+/* Tambahkan style tambahan sesuai kebutuhan Anda */
+
+
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #9c1e08; /* Warna oranye yang lebih cerah */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.content img {
+    display: block; /* Membuat gambar menjadi blok agar dapat diatur posisinya */
+    margin: 0 auto; /* Pusatkan gambar secara horizontal */
+    max-width: 1000px; /* Pastikan gambar tidak melebihi lebar konten */
+}
+content h2 {
+    font-size: 24px;
+    margin: 0 0 20px;
+    text-align: center; /* Menambahkan style untuk teks alignment */
+}
+content p {
+    font-size: 16px;
+    text-align: center; /* Menambahkan style untuk teks alignment */
+}
+
+
+#beranda h2,
+#beranda p {
+    text-align: center; /* Mengatur teks "Selamat Datang di Toko Donat" dan paragraf berikutnya menjadi rata tengah */
+}
+
+#sejarah {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #9c1e08; /* Sesuaikan dengan warna yang diinginkan */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #ffffff; /* Sesuaikan dengan warna teks yang diinginkan */
+}
+
+#sejarah h2 {
+    font-size: 24px;
+    margin: 0 0 20px;
+}
+
+#sejarah p {
+    font-size: 16px;
+    text-align: center;
+}
+
+#kontak h2,
+#kontak p,
+#kontak address,
+#kontak .social-icons {
+    color: #ffffff; /* Warna teks cerah (merah oranye) */
+    text-align: center; /* Mengatur teks "Hubungi Kami" dan paragraf kontak menjadi rata kiri */
+}
+
+#kontak iframe {    
+    display: flex; /* Mengatur elemen "Hubungi Kami" dan peta dalam satu baris */
+    justify-content: space-between;
+    display: block; /* Menampilkan iframe sebagai blok */
+    margin: 0 auto; /* Pusatkan peta horizontal di dalam konten */
+    align-items: right;
+}
+
+#kontak p2 {
+    color: #ffffff; /* Warna teks cerah (merah oranye) */
+    font-size: 24px;
+    margin: 0 0 20px;
+    text-align: center; /* Menambahkan style untuk teks alignment */
+    display: block; /* Menampilkan iframe sebagai blok */
+    margin: 0 auto; /* Pusatkan peta horizontal di dalam konten */
+}
+
+/* Tambahkan style CSS berikut ke file style.css */
+
+.produk-container .produk-item:nth-child(n+9) {
+    display: none;
+}
+
+.load-more-container {
+    display: flex;
+    justify-content: center; /* Memposisikan ke tengah secara horizontal */
+    margin-top: 20px; /* Atur jarak antara item produk dan tombol "Muat Lainnya" */
+}
+
+
+.produk {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #9c1e08; /* Warna kuning emas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.produk h2 {
+    font-size: 24px;
+    margin: 0 0 20px;
+}
+
+.produk-container {
+    display: grid;
+    grid-gap: 20px;
+    justify-content: center;
+    position: relative; /* Tambahkan ini */
+}
+
+.produk-item {
+    background-color: #FFD700; /* Warna oranye yang lebih cerah */
+    padding: 20px;
+    border: 1px solid #FF4500; /* Warna teks cerah (merah oranye) */
+    color: #000000;
+    border-radius: 5px;
+}
+
+
+
+/* Style untuk Donat Coklat di tengah dan diperbesar */
+.produk-item:first-child {
+    text-align: center; /* Memastikan konten di tengah */
+}
+
+.produk-item:first-child img {
+    width: 200%; /* Mengatur lebar gambar agar lebih besar */
+    max-width: 700px; /* Ukuran maksimum gambar */
+    display: block; /* Membuat gambar menjadi blok agar bisa ditengahkan */
+    margin: 0 auto; /* Menengahkan gambar */
+}
+
+.produk-item:first-child h3,
+.produk-item:first-child p,
+.produk-item:first-child p2 {
+    text-align: center; /* Memastikan teks di tengah */
+    max-width: 700px; /* Ukuran maksimum gambar */
+}
+
+
+.produk-item img {
+    max-width: 100%;
+}
+
+.produk-item h3 {
+    font-size: 30px;
+    margin: 10px 0;
+    text-align: left;
+    font-family: 'Agbalumo', cursive;
+}
+
+.produk-item p {
+    text-align: left;
+    font-size: 16px;
+}
+
+.produk-item p2 {
+    text-align: left;
+    font-weight: bold;
+    color: #f50909;
+    font-size: 27px;
+}
+
+.produk img {
+    max-width: 70%;
+    border: 1px solid #FF4500; /* Warna teks cerah (merah oranye) */
+    border-radius: 5px;
+}
+.social-icons {
+    margin-top: 10px;
+}
+
+.zoom-on-hover {
+    transition: transform 0.2s; /* Atur durasi transisi */
+}
+
+.zoom-on-hover:hover {
+    transform: scale(1.1); /* Membesarkan elemen saat kursor diarahkan */
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px; /* Jarak antara ikon-ikon sosial media */
+}
+
+.social-icons img {
+    max-width: 30px; /* Atur ukuran maksimum ikon sosial media */
+}
+
+/* Menambahkan style tambahan sesuai kebutuhan Anda */
+
+/* Gaya CSS Anda yang sudah ada */
+
+        /* Media Query untuk responsif */
+        @media (max-width: 768px) {
+            nav ul {
+                display: block;
+                text-align: center;
+            }
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            .swiper-container {
+                width: 100%;
+            }
+            .produk-container {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+            iframe {
+                height: 250px;
+            }
+        }
+        @media (max-width: 480px) {
+            .produk-container {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+            iframe {
+                height: 200px;
+            }
+        }
